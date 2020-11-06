@@ -4,6 +4,7 @@ import Operations from '@/pages/Operations.vue'
 import Accounts from '@/pages/Accounts.vue'
 import More from '@/pages/More'
 import Registration from '@/pages/Registration'
+import Login from '@/pages/Login'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,12 @@ const routes = [
     path: '/registration',
     name: 'registration',
     component: Registration,
+    meta: { layout: 'empty' }
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: Login,
     meta: { layout: 'empty' }
   },
   {

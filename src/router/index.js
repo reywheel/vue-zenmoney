@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Operations from '@/pages/Operations.vue'
 import Accounts from '@/pages/Accounts.vue'
+import More from '@/pages/More'
 
 Vue.use(VueRouter)
 
@@ -16,6 +17,12 @@ const routes = [
     path: '/accounts',
     name: 'accounts',
     component: Accounts,
+    meta: { layout: 'default' }
+  },
+  {
+    path: '/more',
+    name: 'more',
+    component: More,
     meta: { layout: 'default' }
   }
 ]

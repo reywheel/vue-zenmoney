@@ -3,10 +3,17 @@ import VueRouter from 'vue-router'
 import Operations from '@/pages/Operations.vue'
 import Accounts from '@/pages/Accounts.vue'
 import More from '@/pages/More'
+import Registration from '@/pages/Registration'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/registration',
+    name: 'registration',
+    component: Registration,
+    meta: { layout: 'empty' }
+  },
   {
     path: '/operations',
     name: 'operations',

@@ -9,10 +9,13 @@
 <script>
 // eslint-disable-next-line no-unused-vars
 import DefaultLayout from '@/layouts/DefaultLayout'
+// eslint-disable-next-line no-unused-vars
+import EmptyLayout from '@/layouts/EmptyLayout'
 
 export default {
   components: {
-    DefaultLayout
+    DefaultLayout,
+    EmptyLayout
   },
   computed: {
     layout () {
